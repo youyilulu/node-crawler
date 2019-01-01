@@ -1,5 +1,3 @@
-require('babel-register')
-
 import should from 'should';
 import override from "../core/decorators/override";
 
@@ -19,7 +17,7 @@ describe('core.decorators', () => {
     /**
      * 测试override是否能识别参数不一致的情况
      */
-    describe('@override', () => {
+    it('@override', () => {
         try {
             class Child extends Base {
                 @override
@@ -32,6 +30,6 @@ describe('core.decorators', () => {
             return
         }
 
-        should.equal(true, false, '@override does not worked')
+        should.equal(true, false, '@override does not work')
     })
 })
