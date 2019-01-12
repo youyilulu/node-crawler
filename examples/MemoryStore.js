@@ -16,3 +16,5 @@ class MemoryStore extends BaseStore {
         return datas
     }
 }
+
+export default MemoryStore

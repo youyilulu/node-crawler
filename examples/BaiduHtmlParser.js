@@ -9,9 +9,9 @@ class BaiduHtmlParser extends HtmlParser {
 
     @override
     getNewUrls($): Array<String> {
-        let urls = new Set()
+        let urls = []
         $('#u1 a').each(function () {
-            urls.add($(this).attr('href'))
+            urls.push($(this).attr('href'))
         })
         return urls
     }
